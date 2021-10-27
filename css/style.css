@@ -216,6 +216,9 @@ main{
 }
 .boxs{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 .depo{
     margin-bottom: 30px;
@@ -278,4 +281,52 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.gale{
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Pacifico', cursive;
+    font-size: 60px;
+}
+.galeria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+.box2{
+    width: 350px;
+    height: 350px;
+    background-color:rgb(24, 27, 27);
+    margin: 6px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-position: center center;
+    background-size: cover;
+    transition: width .3s ease, height .3s ease;
+    cursor: pointer;
+
+}.box2:hover{
+    width: 355px;
+    height: 355px;
+}
+.box2:nth-child(1){
+    background-image: url(../img/media.jpg);
+}
+.box2:nth-child(2){
+    background-image: url(../img/media2.jpg);
+}
+.box2:nth-child(3){
+    background-image: url(../img/media3.jpg);
+}
+.box2:nth-child(4){
+    background-image: url(../img/media4.jpg);
+}
+.box2:nth-child(5){
+    background-image: url(../img/media5.jpg);
+}
+.box2:nth-child(6){
+    background-image: url(../img/media6.jpg);
 }

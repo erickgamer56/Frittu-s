@@ -13,6 +13,12 @@ html{
 body{
     background-color: #111111;
 }
+body::-webkit-scrollbar{
+    background-color: black;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: gray;
+}
 .menu{
     background-color: rgb(255, 255, 255);
     position: fixed;
@@ -90,15 +96,23 @@ header{
 .imglogo img{
     filter: drop-shadow(0 0 35px black);
 }
-.infos h1{
+.infos2 h1{
     font-size: 35px;
     font-family: 'Bebas Neue', cursive;
     font-family: 'Lobster', cursive;
     font-family: 'Pacifico', cursive;
 }
-.infos p{
+.infos2 p{
     font-size: 25px;
     margin-bottom: 16px;
+}
+.infos2 a{
+    background-color: rgba(255, 217, 0, 0.712);
+    padding: 13px;
+    border-radius: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color .3s ease;
 }
 .infos a{
     background-color: rgba(255, 217, 0, 0.712);
@@ -329,4 +343,95 @@ footer{
 }
 .box2:nth-child(6){
     background-image: url(../img/media6.jpg);
+}
+.hambu{
+    display: none;
+}
+.fa-bars{
+    color: black;
+    font-size: 35px;
+}
+@media (max-width:777px){
+    .ul{
+        display: none;
+    }
+    .hambu{
+        display: block;
+    }
+    .bar{
+        flex-wrap: wrap-reverse;
+        background-color: transparent;
+    }
+    .imglogo{
+        width: 230px;
+        height: 200px;
+    }
+    .imglogo img{
+        max-width: 100%;
+    }
+    .a2{
+        width: 200px;
+        align-items: center;
+        display: none;
+    }
+    .infos2 h1{
+        text-align: center;
+    }
+    .infos2 p{
+        text-align: center;
+    }
+    .logo h1{
+        font-size: 25px;
+    }
+    .logo i{
+        font-size: 25px;
+    }
+    .lançamentos{
+        flex-wrap: wrap-reverse;
+    }
+    .img1{
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    .lançamentos img{
+        width: 80%;
+    }
+    .infos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 16px;
+    }
+    .infos a{
+        margin-top: 6px;
+    }
+    main {
+        display: flex ;
+        flex-direction: column-reverse;
+    }
+    .local{
+        text-align: center;
+        margin: 0;
+    }
+    .loca{
+        margin: 0;
+    }
+    .box{
+        width: 95%;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+    .boxs{
+        width: 100%;
+    }
+    .box2{
+        width: 90%;
+        height: 200px;
+        margin: 0;
+        margin-bottom: 15px;
+    }
 }

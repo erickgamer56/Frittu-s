@@ -114,13 +114,8 @@ header{
     font-size: 20px;
     transition: background-color .3s ease;
 }
-.infos a{
-    background-color: rgba(255, 217, 0, 0.712);
-    padding: 13px;
-    border-radius: 10px 20px;
-    text-decoration: none;
-    font-size: 20px;
-    transition: background-color .3s ease;
+.infos2 a:hover{
+    background-color: rgb(66, 58, 58);
 }
 .infos a:hover{
     background-color: rgb(66, 58, 58);
@@ -244,6 +239,7 @@ main{
     margin: 5px;
     border-radius: 10px;
     background-position: center center;
+    background-size: cover;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -252,6 +248,15 @@ main{
 }
 .gra{
     font-size: 70px;
+}
+.box:hover:nth-child(1){
+    background-image: url(../img/media4.jpg);
+}
+.box:hover:nth-child(2){
+    background-image: url(../img/media5.jpg);
+}
+.box:hover:nth-child(3){
+    background-image: url(../img/media4.jpg);
 }
 .box:hover .h3{
     opacity: 1;
@@ -326,6 +331,22 @@ footer{
     width: 355px;
     height: 355px;
 }
+.box3{
+    width: 350px;
+    height: 350px;
+    background-color:rgb(24, 27, 27);
+    margin: 6px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-position: center center;
+    background-size: cover;
+    transition: width .3s ease, height .3s ease;
+    cursor: pointer;
+
+}.box3:hover{
+    width: 355px;
+    height: 355px;
+}
 .box2:nth-child(1){
     background-image: url(../img/media.jpg);
 }
@@ -335,17 +356,23 @@ footer{
 .box2:nth-child(3){
     background-image: url(../img/media3.jpg);
 }
-.box2:nth-child(4){
+.box3:nth-child(1){
     background-image: url(../img/media4.jpg);
 }
-.box2:nth-child(5){
+.box3:nth-child(2){
     background-image: url(../img/media5.jpg);
 }
-.box2:nth-child(6){
+.box3:nth-child(3){
     background-image: url(../img/media6.jpg);
 }
 .hambu{
     display: none;
+}
+.sec1{
+    display: flex;
+}
+.sec2{
+    display: flex;
 }
 .fa-bars{
     color: black;
@@ -434,4 +461,23 @@ footer{
         margin: 0;
         margin-bottom: 15px;
     }
+}
+.abtn{
+    width: 150px;
+    height: 46px;
+    color: black;
+    background-color: yellow;
+    font-size: 15px;
+    font-weight: bold;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px ;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color .3s ease , color .3s ease;
+}
+.abtn:hover{
+    background-color: #333333;
+    color: white;
 }
